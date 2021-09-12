@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-dark: #422C5B;
+  --clr-white:  #ffffff;
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Azeret Mono', monospace;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* border: 3px solid black; */
+  /* margin: 10rem; */
+  /* background-color: white; */
+}
+
+.container{
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+  border-radius: 0.5rem;
+ box-shadow: 15px 15px 10px black;
+ border: 1px solid black;
+ width: 40rem;
+}
+
+h1{
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2.4rem;
+}
+
+form{
+  padding: 3rem 4rem;
+}
+
+.form-control{
+  margin-bottom: 1rem;
+  padding-bottom: 1.3rem;
+  position: relative;
+}
+
+.form-control label{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.form-control input{
+  display: block;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  border-radius: 5px;
+  width: 70%;
+  border: 1px solid var(--clr-dark);
+}
+
+.form-control small{
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+.form-control.error input{
+  border-color: red;
+}
+
+.form-control.success input{
+  border-color: green;
+}
+
+button{
+  cursor: pointer;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  border-radius: 5px;
+  width: 40%;
+  padding: 0.2rem 0;
+  /* margin-left: 5rem; */
+  /* margin: 3rem; */
+}
